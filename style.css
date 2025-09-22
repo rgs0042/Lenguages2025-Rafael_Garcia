@@ -1,8 +1,21 @@
+html{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
 .caja{
     display: flex;
+    background-color: rgb(121, 108, 108);
+    margin: 0;
 }
 
 .uno{
+    margin: 10px auto;
+    margin: auto;
+    text-align: center;
     color: rgb(204, 204, 255) !important;
     background-color: burlywood;
     flex: auto;
@@ -10,6 +23,9 @@
 }
 
 .dos{
+    margin: 10px auto;
+    margin: auto;
+    text-align: center;
     color: rgb(81, 81, 238) !important;
     background-color: rgb(250, 187, 105);
     flex: auto;
@@ -17,6 +33,8 @@
 }
 
 .tres{
+    margin: 10px auto;
+    text-align: center;
     color: rgb(63, 63, 145) !important;
     background-color: rgb(228, 135, 13);
     flex: auto;
