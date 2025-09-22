@@ -1,3 +1,24 @@
-h1{
-    color:blue;
+.caja{
+    display: flex;
+}
+
+.uno{
+    color: rgb(204, 204, 255) !important;
+    background-color: burlywood;
+    flex: auto;
+    max-width: 33%;
+}
+
+.dos{
+    color: rgb(81, 81, 238) !important;
+    background-color: rgb(250, 187, 105);
+    flex: auto;
+    max-width: 33%;
+}
+
+.tres{
+    color: rgb(63, 63, 145) !important;
+    background-color: rgb(228, 135, 13);
+    flex: auto;
+    max-width: 33%;
 }
