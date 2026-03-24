@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rafael García Sánchez">
+    <title>posicionamiento 01</title>
+    <style>
+        * {
+            margin: 0;
+            height: 100%;
+        }
+
+        .azul {
+            background-color: blue;
+            width: 100%;
+            height: 15%;
+            float: left;
+        }
+
+        .azul>h1 {
+            font-size: 7em;
+        }
+        .gris{
+            background-color: grey;
+            width: 100%;
+            height: 10%;
+            float: left;
+            position: sticky;
+            top: 0;
+        }
+
+        .rojo {
+            background-color: red;
+            width: 25%;
+            height: 60%;
+            float: left;
+        }
+
+        .verde {
+            background-color: green;
+            width: 37.5%;
+            height: 60%;
+            float: left;
+        }
+
+        .amarillo {
+            background-color: yellow;
+            width: 37.5%;
+            height: 60%;
+            float: right;
+        }
+
+        .naranja {
+            background-color: orange;
+            width: 100%;
+            height: 50%;
+            float: right;
+        }
+        .morado {
+            position: fixed;
+            top: 80vh;
+            left: 80vw;
+            background-color: violet;
+            width: 100px;
+            height: 100px;
+            z-index: 10;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="azul">
+            <h1>Título largo en azul</h1>
+        </div>
+        <div class="gris">
+            <p>gris</p>
+        </div>
+        <div class="rojo">
+            <p>rojo</p>
+        </div>
+        <div class="verde">
+            <p>verde</p>
+        </div>
+        <div class="amarillo">
+            <p>amarillo</p>
+        </div>
+        <div class="naranja">
+            <p>naranja</p>
+        </div>
+        <div class="morado">
+            <p>morado</p>
+        </div>
+    </main>
+</body>
+
+</html>
