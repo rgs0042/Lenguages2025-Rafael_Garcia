@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/css" href="ej02_01.css"?>
+
+
+<libro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="ej02_01.xsd">
+    <portada>
+        <titulo>Volver a tragarse los pájaros</titulo>
+        <escritor>Míster Jägger</escritor>
+        
+        <editorial>Ediciones Martínez Roca</editorial>
+    </portada>
+    <contenido>
+        <capitulo>
+            <titulocap>Título 1</titulocap>
+            <texto>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus explicabo excepturi sunt ipsum dolore repudiandae ratione perspiciatis suscipit repellat laboriosam doloremque, sint necessitatibus magni iste rerum laborum. Vel, adipisci reprehenderit.
+            </texto>
+        </capitulo>
+        <capitulo>
+            <titulocap>Título 2</titulocap>
+            <texto>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci repellendus aperiam consectetur iure quo? Optio est laudantium id nulla excepturi, quidem eaque repudiandae quos fugit iste ipsam nostrum neque inventore?
+            </texto>
+        </capitulo>
+        <capitulo>
+            <titulocap>Título 3</titulocap>
+            <texto>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci repellendus aperiam consectetur iure quo? Optio est laudantium id nulla excepturi, quidem eaque repudiandae quos fugit iste ipsam nostrum neque inventore?</texto>
+        </capitulo>
+    </contenido>
+    <trasero>
+        <resumen>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci repellendus</resumen>
+        <fecha>04/10/2023</fecha>
+    </trasero>
+    
+    
+</libro>

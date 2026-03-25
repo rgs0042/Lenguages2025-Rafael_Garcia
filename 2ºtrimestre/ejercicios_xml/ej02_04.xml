@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/css" href="ej02_04.css"?>
+
+<tarjeta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="ej02_04.xsd">
+    <dni>
+        <fotografia>Foto</fotografia>
+        <contenido>
+            <apellidos>Lucas Lucas</apellidos>
+            <nombre>Pepe</nombre>
+            
+            <fechanac>66/66/6666</fechanac>
+            <lugarnac>Allí</lugarnac>
+            <sexo>Macho</sexo>
+            <nacionalidad>Aquí</nacionalidad>
+        </contenido>
+
+    </dni>
+    <dniatr>
+
+        <firma>Firma</firma>
+        <id id="c123">00000000z</id>
+        <fechaemi>99/99/9999</fechaemi>
+        <caducidad>88/88/8888</caducidad>
+        <domicilio>Aquí y Allí</domicilio>
+
+        <texto>JAJAJAJAJAJJAJJAJAJAJAJAJAJJAJAJAJAJAJJAJAJAJAJAJAJAJJAJAJJ</texto>
+
+    </dniatr>
+</tarjeta>

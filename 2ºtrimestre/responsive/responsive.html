@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="author" content="Rafael García Sánchez">
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+
+            display: flex;
+            flex-direction: column;
+            background-image: url(./img/apopeq.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        header {
+            background-color: rgb(49, 49, 49);
+            height: 10vh;
+        }
+
+        .g {
+            display: none;
+        }
+
+        .m {
+            display: none;
+        }
+
+        .p {
+            display: block;
+        }
+
+        h1 {
+            margin: 20px;
+            text-align: center;
+            color: rgb(233, 233, 233);
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            width: 100%;
+            align-items: center;
+            height: 90vh;
+        }
+
+        main>img {
+            width: 50%;
+        }
+
+        main>h2 {
+            padding: 20px;
+            height: 10%;
+            text-align: center;
+            width: 50%;
+            background-color: rgba(247, 247, 247, 0.37);
+            backdrop-filter: blur(10px);
+        }
+
+        /* PANTALLA MEDIANA */
+        @media screen and (min-width:600px) and (max-width:1200px) {
+            .g {
+                display: none;
+            }
+
+            .m {
+                display: block;
+            }
+
+            .p {
+                display: none;
+            }
+
+            body {
+                background-image: url(./img/apomed.jpg);
+            }
+        }
+
+        /* PANTALLA GRANDE */
+        @media screen and (min-width:1201px) {
+            .g {
+                display: block;
+            }
+
+            .m {
+                display: none;
+            }
+
+            .p {
+                display: none;
+            }
+
+            body {
+                background-image: url(./img/apogran.jpg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="g">Tamaño grande</h1>
+        <h1 class="m">Tamaño mediano</h1>
+        <h1 class="p">Tamaño pequeño</h1>
+    </header>
+    <main>
+        <img class="g" src="./img/zomgra.jfif" alt="">
+        <img class="m" src="./img/zommed.jfif" alt="">
+        <img class="p" src="./img/zompeq.png" alt="">
+        <h2 class="g">Tamaño grande</h2>
+        <h2 class="m">Tamaño mediano</h2>
+        <h2 class="p">Tamaño pequeño</h2>
+    </main>
+</body>
+
+</html>
