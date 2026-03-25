@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="author" content="Rafael García Sánchez">
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            gap: 0.3vw;
+            margin: 0.5vw;
+            background-color: rgb(206, 193, 176);
+        }
+
+        header {
+            background-color: antiquewhite;
+            height: 10vh;
+
+
+        }
+
+        .divcenter {
+            display: flex;
+            flex-direction: row;
+            padding: 0.4vw;
+            gap: 0.4vw;
+            background-color: antiquewhite;
+            height: 80vh;
+        }
+
+        aside {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid salmon;
+            background-color: beige;
+            width: 10vw;
+        }
+        aside>article{
+            margin: 20px;
+            justify-content: center;
+            height: 6%;
+            width: 80%;
+            background-color: coral;
+        }
+
+        main {
+            border: 1px solid salmon;
+            background-color: beige;
+            width: 80vw;
+        }
+
+        footer {
+            background-color: antiquewhite;
+            height: 10vh;
+        }
+
+        h1 {
+            margin: 30px auto;
+            text-align: center;
+        }
+
+        .divmain {
+            justify-content: space-around;
+            display: flex;
+            gap: 1vw;
+            flex-direction: row;
+            flex-wrap: wrap;
+            height: 80%;
+        }
+
+        .divmain>article {
+            height: 30%;
+            width: 300px;
+            background-color: coral;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Ejemplo de cabecera</h1>
+    </header>
+    <div class="divcenter">
+        <aside>
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+        </aside>
+        <main>
+            <h1>ÁREA PRINCIPAL</h1>
+            <div class="divmain">
+                <article></article>
+                <article></article>
+                <article></article>
+                <article></article>
+                <article></article>
+            </div>
+        </main>
+        <aside>
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+        </aside>
+    </div>
+
+    <footer> <h1>Ejemplo de footer</h1></footer>
+</body>
+
+</html>

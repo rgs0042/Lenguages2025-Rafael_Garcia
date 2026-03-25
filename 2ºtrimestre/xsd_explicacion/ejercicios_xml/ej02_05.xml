@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/css" href="ej02_05.css"?>
+<tarjeta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="ej02_05.xsd">
+    <credito>
+        <numero id="n1234">1234567891234567</numero>
+        <nombre>Pepe</nombre>
+        <venci>99/99/9999</venci>
+        <chip>La tarjeta de crédito tiene un chip</chip>
+        <logo>Logo</logo>
+
+    </credito>
+    <creditoatr>
+        <firma>Esto debería de ser una firma</firma>
+        <cvv>999</cvv>
+    </creditoatr>
+</tarjeta>
