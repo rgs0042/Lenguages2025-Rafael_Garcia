@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Propiedad display</title>
+<meta name="author" content="Rafael García Sánchez">
+<style>
+
+  body{
+      background-color:aliceblue;
+    }
+
+  h1{
+    text-align: center;
+  }
+  .inline {
+    display: inline;
+    background-color:brown;
+    padding: 5px;
+  }
+  .block {
+    display: block;
+    background-color:blue;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  .inline-block {
+    display: inline-block;
+    width: 120px;
+    height: 60px;
+    background-color:coral;
+    margin-top: 10px;
+  }
+  .visible{
+    display: inline-block;
+    visibility:collapse;
+    width: 120px;
+    height: 60px;
+    background-color:coral;
+    margin-top: 10px;
+  }
+  .none{
+    display: none;
+    width: 120px;
+    height: 60px;
+    background-color:coral;
+    margin-top: 10px;
+  }
+  .flex {
+    display: flex;
+    width: 120px;
+    height: 60px;
+    background-color:coral;
+    margin-top: 10px;
+  }
+  .flexi {
+    display: flex;
+    width: 25%;
+    
+    background-color:rgb(158, 51, 12);
+    margin: 10px;
+  }
+</style>
+</head>
+<body>
+<h1>Propiedad display</h1>
+<p>Determina cómo se comportan visualmente los elementos: como bloques, en línea, o una mezcla.</p>
+<!-- No inicia una nueva línea, ocupa el ancho necesario, lo les afecta el width o height -->
+<p>
+  <span class="inline">Inline</span>
+  <span class="inline">No se expande</span>
+</p>
+<!-- Generan un nuevo bloque de formato, comienza en una nueva línea, ocupa todo el espacio disponible, se adapta al lato del contido si no se estable el height -->
+<div class="block">Soy un bloque y ocupo toda la línea.</div>
+<!-- Combina características de block e inline -->
+<div class="inline-block">inline-block</div>
+<div class="inline-block">inline-block</div>
+<!-- También existe el display visibility, que lo que hace es mortrar o no el elemento al que hacemos referencia -->
+<div class="visible">inline-block</div>
+<div class="visible">inline-block</div>
+<!-- El elemento no se muestra en absoluto -->
+<div class="none">inline-block</div>
+<!-- Introduce un modelo de diseño flexible y se utiliza para distribuir ek espacio en ek diseño entre los elementos de dentro del contenedor -->
+<div class="flex">
+  <div class="flexi"></div>
+  <div class="flexi"></div>
+  <div class="flexi"></div>
+  <div class="flexi"></div>
+
+  
+</div>
+<a href="../indextema8.html">Volver al índice</a>
+</body>
+</html>

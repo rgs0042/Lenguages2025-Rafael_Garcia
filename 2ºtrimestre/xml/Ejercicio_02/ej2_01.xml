@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/css" href="ej02_01.css"?>
+<!DOCTYPE libro
+[
+    <!ELEMENT libro (portada, contenido,trasero)>
+    <!ELEMENT portada (titulo,escritor, editorial)>
+    <!ELEMENT contenido (capitulo*)>
+    <!ELEMENT capitulo (titulo,texto)>
+    <!ELEMENT trasero (resumen, fecha)>
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT escritor (#PCDATA)>
+    <!ELEMENT editorial (#PCDATA)>
+    <!ELEMENT texto (#PCDATA)>
+    <!ELEMENT resumen (#PCDATA)>
+    <!ELEMENT fecha (#PCDATA)>
+
+]>
+<libro>
+    <portada>
+        <titulo>Volver a tragarse los pájaros</titulo>
+        <escritor>Míster Jägger</escritor>
+        
+        <editorial>Ediciones Martínez Roca</editorial>
+    </portada>
+    <contenido>
+        <capitulo>
+            <titulo>Título 1</titulo>
+            <texto>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus explicabo excepturi sunt ipsum dolore repudiandae ratione perspiciatis suscipit repellat laboriosam doloremque, sint necessitatibus magni iste rerum laborum. Vel, adipisci reprehenderit.
+            </texto>
+        </capitulo>
+        <capitulo>
+            <titulo>Título 2</titulo>
+            <texto>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci repellendus aperiam consectetur iure quo? Optio est laudantium id nulla excepturi, quidem eaque repudiandae quos fugit iste ipsam nostrum neque inventore?
+            </texto>
+        </capitulo>
+        <capitulo>
+            <titulo>Título 3</titulo>
+            <texto>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci repellendus aperiam consectetur iure quo? Optio est laudantium id nulla excepturi, quidem eaque repudiandae quos fugit iste ipsam nostrum neque inventore?</texto>
+        </capitulo>
+    </contenido>
+    <trasero>
+        <resumen>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci repellendus</resumen>
+        <fecha>04/10/2023</fecha>
+    </trasero>
+    
+    
+</libro>

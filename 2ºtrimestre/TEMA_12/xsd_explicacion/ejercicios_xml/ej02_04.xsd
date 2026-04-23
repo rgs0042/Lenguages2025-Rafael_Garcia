@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="tarjeta">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="dni">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="fotografia" type="xs:string" />
+                            <xs:element name="contenido">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="apellidos" type="xs:string" />
+                                        <xs:element name="nombre" type="xs:string" />
+                                        <xs:element name="fechanac" type="xs:string" />
+                                        <xs:element name="lugarnac" type="xs:string" />
+                                        <xs:element name="sexo" type="xs:string" />
+                                        <xs:element name="nacionalidad" type="xs:string" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="dniatr">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="firma" type="xs:string" />
+                            <xs:element name="id">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="id" use="required" />
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="fechaemi" type="xs:string" />
+                            <xs:element name="caducidad" type="xs:string" />
+                            <xs:element name="domicilio" type="xs:string" />
+                            <xs:element name="texto" type="xs:string" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

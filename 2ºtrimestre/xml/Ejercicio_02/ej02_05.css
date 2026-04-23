@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+tarjeta{
+    display: inline-block;
+    background-color: rgb(235, 158, 156);
+}
+cridito{
+    color: white;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+    height: 400px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(139, 0, 0);
+}
+creditoatr{
+    color: white;
+    justify-content: space-around;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+    height: 400px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(139, 0, 0);
+}
+
+contenido{
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap:1.2rem;
+}
+
+fotografia{
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    background-color: brown;
+}
+texto{
+    justify-self:end;
+}

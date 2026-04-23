@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+  <meta name="author" content="Rafael García Sánchez">
+  <style>
+    body{
+      width: 100%;
+    }
+    .form{
+      display: inline-block;
+      width: 33%;
+    }
+  </style>
+</head>
+
+<body style="background-color: aliceblue;">
+  <div class="form">
+    <h1>Formulario de contacto </h1>
+    <form action="procesar.php" method="post">
+
+      <label for="nombre">Nombre:</label>
+      <input type="text" name="nombre">
+      <br>
+      <br>
+      <label for="email">Email:</label>
+      <input type="text" name="nombre">
+      <br>
+      <br>
+      <label for="asunto">Asunto:</label>
+      <input type="text" name="asunto">
+      <br>
+      <br>
+      <label for="comentarios">Comentarios:</label><br>
+      <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+    </form>
+    <br>
+    <input type="submit" text="Enviar">
+  </div>
+  <div class="form">
+    <h1>Formulario de registro al curso</h1>
+    <form action="proceso.php" method="post"></form>
+    <label for="nombre">Nombre completo:(requerido)</label><br>
+    <input type="text" name="nombre" required><br><br>
+    <label for="correo">Correo electrónico:(requerido)</label><br>
+    <input type="email" name="email" id="email" required><br><br>
+    <label for="edad">Edad</label><br>
+    <input type="number" name="number" id="number" min="1" max="110" step="1"><br><br>
+    <label for="curso">Curso de interés:</label><br>
+    <select name="cursos" id="cursos">
+      <option value="Informática básica"> Informática básica</option>
+    </select>
+    <br>
+    <br>
+    <label for="turno">Turno preferido:</label><br>
+    <input type="radio" name="mañana" id="mañana" value="m">Mañana
+    <br>
+    <input type="radio" name="tarde" id="tarde" value="t">Tarde
+    <br>
+    <br>
+    <input type="checkbox" name="curso" id="curso">
+    <label for="condiciones">Acepto las condiciones del curso</label>
+    <br>
+    <br>
+    <label for="comentarios">Comentarios adicionales:</label><br>
+    <textarea name="comentario" id="comentario" cols="50" rows="5"
+      placeholder="Escribe aquí tus dudas o preferencias..."></textarea><br>
+    <br>
+
+    <input type="submit" value="Enviar registro">
+  </div>
+  <div class="form">
+    <h1>Formulario de pedido</h1>
+    <form action="proceso.php" method="post">
+      <label for="text">Nombre del cliente:</label><br>
+      <input type="text" name="nombre" id="name">
+      <br>
+      <br>
+      <label for="email">Correo electrónico:</label><br>
+      <input type="email" name="correo" id="correo">
+      <br><br>
+      <label for="date">Fecha deseada de entrega :</label><br>
+      <input type="date">
+      <br><br>
+      <label for="color">Color del producto:</label><br>
+      <input type="color">
+      <br><br>
+      <label for="range">Cantidad (1 al 10):</label><br>
+      <input type="range" name="range " id="range" min="0" max="10">
+      <br><br>
+      <label for="accesorios">Accesorios adicionales:</label><br>
+
+      <select name="accesorios" id="accesorios" size="4">
+        <option value="funda">Funda protectora</option>
+        <option value="bateria">Batería adicional</option>
+        <option value="soporte">Soporte de mesa</option>
+        <option value="kit">Kit de limpieza</option>
+      </select>
+      <br>
+      <br>
+      <input type="checkbox" name="curso" id="curso">
+      <label for="condiciones">Acepto los términos del pedido</label><br><br>
+      <label for="comentarios">Comentarios o instrucciones especiales:</label><br>
+      <textarea name="comentario" id="comentario" cols="40" rows="5"
+        placeholder="Indica detalles adicionales sobre tu pedido..."></textarea><br>
+      <br>
+
+      <input type="submit" value="Enviar pedido">
+      </form>
+    </div>
+
+  <a href="../../index_formularios.html">Volver a atrás</a>
+</body>
+
+</html>

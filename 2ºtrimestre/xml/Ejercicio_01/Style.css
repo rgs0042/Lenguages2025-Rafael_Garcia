@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+header{
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(71, 13, 13);
+    color: rgb(211, 209, 188);
+}
+body{
+    background-image: url(./img/fondo2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color:rgb(211, 209, 188); 
+}
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+}
+main>div{
+    color:rgb(253, 251, 233);
+    padding: 10px;
+    border: 1px solid beige;
+    border-radius: 20px;
+    background-color:rgba(71, 13, 13, 0.534) ;
+    backdrop-filter: blur(3px);
+    width: 50%;
+    box-shadow: 0 0 5px 2px inset   ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h3{
+    margin: 10px;
+    color:rgb(245, 204, 151);
+}
+h4{
+    text-decoration: underline;
+    color:rgb(250, 225, 193);
+}
+span{
+    font-family: monospace;
+    color: aquamarine;
+}
+hr{
+    color:  rgb(71, 13, 13) !important;
+}
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(71, 13, 13);
+    color: rgb(211, 209, 188);
+}
+.warning{
+    border: 1px dashed ;
+    background-color: rgb(240, 248, 255);
+    color: rgb(245, 63, 99) !important;
+}
+.warning>h3{
+    color: crimson;
+}
+
+.ejemplo{
+    display: flex;
+    justify-content: space-between;
+    gap: 2vh;
+}
+.ejemplo>img{
+    border-radius: 10px;
+    width: 40%;
+    height: auto;
+}
+.ultimo{
+    display: flex;
+    margin: 10px 0;
+}
+
+
+@media screen and (max-width: 1000px) {
+    main>div{
+        width: 70%;
+    }
+}

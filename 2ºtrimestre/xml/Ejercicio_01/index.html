@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rafael Garcia Sánchez">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Style.css">
+</head>
+
+<body>
+    <header>
+        <h1>XML - El inicio</h1>
+    </header>
+
+    <main>
+        <div class="inicio">
+            <h3>Objetivo general</h3>
+            <p>Conocer las característaicas y uso de XML
+                <br>Entender el concepto de validación
+                <br>Aprender la validación DTD
+            </p>
+        </div>
+        <div>
+            <h3>Descripción general</h3>
+            <p>Es un lenguaje de marcado de propósito general definido por el W3C
+                <br>El propósito principal del lenguaje es compartir datos a través de diferentes sistemas, como
+                Internet.
+            </p>
+            <ul>
+                <li>Similar a HTML.</li>
+                <li>No está predefinido. Las etiquetas se definen</li>
+            </ul>
+        </div>
+        <div>
+            <h3>XHTML</h3>
+            <ul>
+                <li>Se trata de un estándar desarrollado por W3C. Es aplicar XML a HTML</li>
+                <li>Versión más estricta y modular de HTML. Lo que significa que las etiquetas deben cerrarse
+                    correctamente
+                    y los documentos deben estar bien formados. </li>
+                <li>Sigue las reglas de XML para definir la estructura y el contenido de las páginas web.</li>
+                <li>Compatible con HTML</li>
+                <li>Compatible con CSS </li>
+                <li>El mismo uso que HTML</li>
+                <li>Su extensión es .xhtml
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h3>Características de XML</h3>
+            <ul>
+                <li>Lenguaje de estructura libre. No está predefinido. Las etiquetas se definen.</li>
+                <li>Consta de dos partes.
+                    <ul>
+                        <li>Prólogo</li>
+                        <li>Cuerpo</li>
+                    </ul>
+                </li>
+                <li>Usa espacios de nombres para evitar ambigüedades</li>
+                <li>Su sintaxis es como la de HTML.</li>
+                <li>Utiliza esquemas en forma de árbol con una única raíz</li>
+                <li>Los documentos se validan.</li>
+            </ul>
+        </div>
+        <div class="warning">
+            <h3>NEGACIÓN</h3>
+            <p>No es un sustituto de HTML (ni lo pretende), No es un gestor de base de datos, No es un estándar de
+                comunicación, No es un lenguaje de programación
+            </p>
+        </div>
+        <div>
+            <h3>Estructura de un documento XML</h3>
+            <div class="ejemplo">
+                <ul>
+                    <li>Prólogo
+                        <ul>
+                            <li>Declaración XML</li>
+                            <li>Información del documento
+                                <ul>
+                                    <li>Hojas de estilo XSLT</li>
+                                    <li>Hojas de estilo CSS</li>
+                                    <li>Validacion DTD (interna o externa)</li>
+                                </ul>
+                        </ul>
+                    </li>
+                    <li> Cuerpo
+                        <ul>
+                            <li>Raíz. Árbol de contenido.
+                                <ul>
+                                    <li>Espacio de nombres</li>
+                                    <li>Validación XSD</li>
+                                </ul>
+                            </li>
+                            <li>Elementos XML</li>
+                        </ul>
+                    </li>
+                </ul>
+                <img src="./img/ejemplo_xml.png" alt="Ejemplo">
+            </div>
+        </div>
+        <div>
+            <h3>El elmento XML</h3>
+            <p>Es la unidad fundamental, etiqueta de apertura de apertura y cierre, atributo y valor, contenido. </p>
+            <hr>
+            <p>El elmento vacío &lt;elmento/&gt;</p>
+        </div>
+        <div>
+            <h3>Validación de un documento XML</h3>
+            <p>Detecta errores en etiquetas, jerarquía o contenido, Asegura que el XML pueda ser procesado por programas
+                sin
+                problemas.</p>
+            <ul>Tipos de validación
+                <li>DTD- Define qué elementos y atributos pueden existir</li>
+                <li>XSD- Define tipos de datos, estructura y restricciones más precisas</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Espacio de nombre y Parse</h3>
+            <div class="ultimo">
+                <div>
+                    <h4>Espacio de nombres en XML</h2>
+                        <ul>
+                            <li>Es un identificador único que se asigna a los elementos y atributos de un XML.
+                                Evita conflictos de nombres cuando se combinan elementos de diferentes fuentes.</li>
+                            <li>Se declara con xmlns en el elemento raíz :
+                                <span> &lt;biblioteca xmlns="http://www.ejemplo.org/biblioteca"&gt;</span>
+                            </li>
+                            <li>Puede usar un prefijo si se necesita distinguir varios namespaces:
+                                <span> xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" </span>
+                            </li>
+                            <li>No tiene que ser una URL real, solo debe ser único y consistente.</li>
+                        </ul>
+                </div>
+
+                <div>
+                    <h4>Parser en XML</h4>
+                    <p>Es la aplicación que lee un XML y lo convierte en una estructura que la computadora pueda usar.
+                        <br />
+                        Nos permite detectar errores y trabajar con los datos del XML.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h3>Proyecto realizado por - Rafael García Sánchez</h3>
+        <p>@Realizado para aprender XML ;&#41; </p>
+    </footer>
+</body>
+
+</html>

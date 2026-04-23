@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rafael García Sánchez">
+    <title>float</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #002E4C;
+            color: #f1f1f1;
+            text-align: center;
+        }
+
+        .caja {
+            background-color: #f1f1f1;
+            width: 200px;
+            height: 150px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+
+        #caja1 {
+            float: left;
+        }
+
+        #caja2 {
+            /* float: left; */
+            float: right;
+        }
+
+        #caja3 {
+            float: left;
+            clear: both;
+
+        }
+
+        #caja4 {
+            float: left;
+        }
+
+        #contenedor {
+            border: 5px solid #aaaaaa;
+            background-color: cornflowerblue;
+            margin: auto;
+            width: 90%;
+            clear: both;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>fluid layout</h1>
+    </header>
+    <main>
+        <div id="caja1" class="caja">1</div>
+        <div id="caja2" class="caja">2</div>
+        <div id="caja3" class="caja">3</div>
+        <div id="caja4" class="caja">4</div>
+        <div id="caja4" class="caja">5</div>
+        <div id="caja4" class="caja">6</div>
+
+        <div id="contenedor">
+            <div id="caja3" class="caja">
+                <div id="caja1" class="caja">1</div>
+                <div id="caja1" class="caja">2</div>
+                <div id="caja1" class="caja">3</div>
+            </div>
+
+            <div id="caja1" class="caja">4</div>
+            <div id="caja3" class="caja">5</div>
+            <div id="caja1" class="caja">6</div>
+
+
+
+        </div>
+    </main>
+
+</body>
+
+</html>

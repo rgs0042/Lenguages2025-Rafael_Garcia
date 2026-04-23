@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuentes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=UnifrakturMaguntia&display=swap"
+        rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: FuenteNueva;
+            src: url(UnifrakturMaguntia-Regular.ttf);
+        }
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        header{
+            padding: 3vh;
+            background-color: cornflowerblue;
+        }
+        body{
+            background-color: aliceblue;
+            margin: 0;
+        }
+
+        h1{
+            text-align: center;
+            color: white;
+            margin: 0 ;
+        }
+
+        h2{
+            margin: 20px;
+        }
+        p{
+            margin: 10px;
+        }
+        main{display: inline-block;
+            background-color: white;
+            padding: 20px;
+            margin: 20px;
+            width: 90%;
+            border-radius: 20px;
+            box-shadow: 0 0 10px 1px rgba(199, 198, 198, 0.596);
+        }
+
+        footer{
+            text-align: center;
+        }
+
+        .fuent {
+            font-family: FuenteNueva;
+        }
+
+        .fuentesegura {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .fuentelink {
+            font-family: "Poiret One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Fuentes con CSS</h1>
+    </header>
+    <main>
+        <h2 class="fuentesegura">1.Fuente segura del sistema</h2>
+        <p class="fuentesegura">Este texto utiliza una fuente segura instalada en la mayoria de dispositivos. </p>
+        <h2 class="fuent">2. Fuente descargada mediante @font-face</h2>
+        <p class="fuent">Este párrafo utiliza una fuente almacenada localmente en el proyecto e incorporada con la regla
+            @font-face.</p>
+        <h2 class="fuentelink">3.Fuente enlazada desde Google Fonts</h2>
+        <p class="fuentelink">Este texto emplea la fuente "UnifrakturMaguntia" cargada desde Google Fonts a través de un
+            enlace en la cabecera.</p>
+    </main>
+    <footer>
+        <p>Autor: Rafael García Sánchez</p>
+        <a href="../indextema8.html">Volver al índice</a>
+    </footer>
+</body>
+
+</html>

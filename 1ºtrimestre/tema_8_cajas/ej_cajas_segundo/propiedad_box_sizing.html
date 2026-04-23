@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Propiedad box-sizing</title>
+    <meta name="author" content="Rafael García Sánchez">
+    <style>
+        body {
+            background-color: aliceblue;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .cajanormal {
+            width: 200px;
+            padding: 20px;
+            border: 1px solid #d9534f;
+            margin-bottom: 20px;
+            background: #ffe5e5;
+        }
+
+        .border-box {
+            box-sizing: border-box;
+            width: 200px;
+            padding: 20px;
+            border: 1px solid #5cb85c;
+            background-color: #e9ffe5;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Propiedad box-sizing</h1>
+    <p>Permite cambiar cómo se calcula el tamaño total de un elemento. Con <code>border-box</code> el padding y borde se
+        incluyen dentro del ancho declarado.</p>
+    <!-- Este atributo nos permite controlar el ancho y el alto con exactitud, no afectan los atributos padding y margin de ningún tipo, por lo tanto border-box nos permite el control total de la distribución de la página. -->
+    <div class="cajanormal">Ancho total mayor a 200px</div>
+    <div class="border-box">Ancho total exactamente 200px</div>
+<a href="../indextema8.html">Volver al índice</a>
+</body>
+
+</html>

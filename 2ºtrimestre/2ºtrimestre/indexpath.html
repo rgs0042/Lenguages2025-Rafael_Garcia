@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumen Tema 12: XPath y Conversión XML</title>
+    <style>
+        :root {
+            --color-primario: #d8f374;
+            --color-secundario: #47420f;
+            --fondo: #d0f7b0;
+            --color-texto: #333;
+        }
+
+        *{
+            margin:0 auto;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--color-texto);
+            background-color: var(--fondo);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--color-primario);
+            color: #ffffff;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-style: italic;
+            margin-top: 1rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        section {
+            background: #ffffff;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: var(--color-secundario);
+            border-bottom: 2px solid var(--fondo);
+            padding-bottom: 0.5rem;
+        }
+
+        ul {
+            list-style-type: square;
+        }
+
+        code {
+            background: #eee;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .links-section {
+            background-color: #e8f4fd;
+            border: 1px solid var(--color-secundario);
+        }
+
+        .links-section a {
+            color: var(--color-secundario);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .links-section a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: var(--color-primario);
+            color: #ffffff;
+            margin-top: 3rem;
+        }
+
+        .tag {
+            display: inline-block;
+            background: var(--color-secundario);
+            color: white;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>XPath y Conversión de Documentos XML</h1>
+        <p>XPath es un lenguaje estándar del W3C diseñado para navegar, evaluar expresiones y localizar elementos o nodos específicos dentro de la estructura arbórea de un documento XML.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>1. Conceptos Fundamentales</h2>
+            <p>XPath utiliza una sintaxis de rutas similar a la de un sistema de archivos para definir el camino hacia un nodo. Los documentos XML se visualizan como un árbol compuesto por distintos tipos de nodos:</p>
+            <ul>
+                <li><strong>Raíz (/):</strong> El origen del documento.</li>
+                <li><strong>Elemento:</strong> Etiquetas principales del XML.</li>
+                <li><strong>Atributo (@):</strong> Propiedades contenidas en las etiquetas.</li>
+                <li><strong>Texto:</strong> El contenido real de los elementos.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>2. Sintaxis y Selección de Nodos</h2>
+            <p>Para recorrer el árbol se emplean operadores específicos que permiten búsquedas flexibles:</p>
+            <ul>
+                <li><code>/</code> : Selección desde la raíz.</li>
+                <li><code>//</code> : Selección de nodos en cualquier lugar del documento.</li>
+                <li><code>.</code> : Referencia al nodo actual.</li>
+                <li><code>..</code> : Referencia al nodo padre.</li>
+                <li><code>[]</code> : Predicados para aplicar filtros o restricciones (por posición o atributos).</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>3. Lenguajes de Transformación (XSL)</h2>
+            <p>XPath es una pieza clave dentro de la familia XSL:</p>
+            <ul>
+                <li><strong>XSLT:</strong> Se utiliza para transformar documentos XML en otros formatos como HTML o XML.</li>
+                <li><strong>XSL-FO:</strong> Especializado en la conversión a formatos de impresión como PDF.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>4. Otros Formatos de Intercambio</h2>
+            <p>Además de XML, existen otros formatos ligeros y comunes en el desarrollo actual:</p>
+            <ul>
+                <li><strong>JSON:</strong> Basado en pares clave-valor, muy eficiente en aplicaciones web.</li>
+                <li><strong>CSV:</strong> Formato tabular simple delimitado por comas.</li>
+                <li><strong>YAML:</strong> Formato jerárquico que usa indentación, común en archivos de configuración.</li>
+            </ul>
+        </section>
+
+        <section class="links-section">
+            <h2>Enlaces a otros ejercicios</h2>
+            <ul>
+                <li><a href="#">Ejercicio 1: Instalación de BaseX</a></li>
+                <li><a href="#">Ejercicio 2: Expresiones XPath en Concesionario</a></li>
+                <li><a href="#">Ejercicio 3: Transformación XSLT básica</a></li>
+                <li><a href="#">Ejercicio 4: Configuración JSON/YAML en VS Code</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p><strong>Rafael García Sánchez</strong></p>
+        <p>Trabajo de clase - Lenguajes de Marcas y Sistemas de Gestión de Información</p>
+        <a href="../../index.html">Volver atrás</a>
+    </footer>
+
+</body>
+</html>

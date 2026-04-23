@@ -1,0 +1,29 @@
+        
+        .fila {
+            clear: both;
+        }
+
+        .casilla img {
+            width: 70px;
+            height: 70px;
+            padding: 15px;
+        }
+
+        .casilla {
+            width: 100px;
+            height: 100px;
+            float: left;
+        }
+
+        .blanca {
+            background: #eeeed2;
+        }
+
+        .verde {
+            background: #769656;
+        }
+
+        .centrar-tablero {
+            margin: 0 auto;
+            width: 800px; 
+        }

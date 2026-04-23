@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+agenda{
+    
+    background-color: antiquewhite;
+}
+contacto{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: cadetblue;
+}
+nombre{
+    text-decoration:underline !important;
+    margin: 10px;
+    font-size: 2rem;
+    width:auto;
+}
+numero{
+    font-family: monospace;
+    margin: 10px;
+    font-size: 1.5rem;
+    width:auto;
+}
+descripcion{
+    margin: 10px;
+    font-size: 1.5rem;
+    width:auto;
+}

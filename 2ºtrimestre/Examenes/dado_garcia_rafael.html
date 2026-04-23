@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rafael García Sánchez">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            padding: 30px;
+            background-color: cadetblue;
+            color: aliceblue;
+            height: 10vh;
+        }
+
+        h1 {
+
+            text-align: center;
+        }
+
+        main {
+            padding: 40px;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            gap: 20px;
+
+        }
+
+        .sep {
+            margin: 0 auto;
+            justify-content: center;
+            align-items: center;
+            gap: 3px;
+            display: flex;
+            height: 100%;
+            width: 50%;
+            flex-direction: row;
+        }
+        .borde{
+            border: 1px solid black;
+            border-radius: 20px;
+        }
+
+        .cont {
+            border: 10px solid rgba(148, 148, 148, 0.349);
+            border-radius: 20px;
+            display: flex;
+            flex-grow: 0;
+            flex-shrink: 0;
+            gap: 3%;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+            width: 200px;
+            height: 200px;
+        }
+
+        .punto {
+            border-radius: 50%;
+            background-color: black;
+            height: 25%;
+            width: 25%;
+            box-shadow: 3px 3px 5px 1px rgba(128, 128, 128, 0.342);
+        }
+
+        footer {
+            background-color: cadetblue;
+            color: aliceblue;
+            height: 5vh;
+
+        }
+
+        .dess {
+            border-radius: 50%;
+            background-color: white;
+            height: 25%;
+            width: 25%;
+            box-shadow: 0 0 0px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Dado</h1>
+    </header>
+    <main>
+        <div class="sep">
+            <div class="borde">
+                <div class="cont">
+                    <div class="punto dess"></div>
+                    <div class="punto dess"></div>
+                    <div class="punto dess"></div>
+                    <div class="punto dess"></div>
+                    <div class="punto"></div>
+                    <div class="punto dess"></div>
+                    <div class="punto dess"></div>
+                    <div class="punto dess"></div>
+                    <div class="punto dess"></div>
+                </div>
+            </div>
+            <div class="borde">
+                <div class="cont">
+                    <div class="punto"></div>
+                    <div class="punto dess"></div>
+                    <div class="punto dess"></div>
+                    <div class="punto dess"></div>
+                    <div class="punto dess"></div>
+                    <div class="punto dess"></div>
+                    <div class="punto dess"></div>
+                    <div class="punto dess"></div>
+                    <div class="punto "></div>
+                </div>
+            </div>
+            <div class="borde">
+            <div class="cont">
+                <div class="punto dess"></div>
+                <div class="punto dess"></div>
+                <div class="punto "></div>
+                <div class="punto dess"></div>
+                <div class="punto"></div>
+                <div class="punto dess"></div>
+                <div class="punto "></div>
+                <div class="punto dess"></div>
+                <div class="punto dess"></div>
+            </div></div>
+        </div>
+
+        <div class="sep">
+            <div class="borde">
+                <div class="cont">
+                    <div class="punto"></div>
+                    <div class="punto dess"></div>
+                    <div class="punto"></div>
+                    <div class="punto dess"></div>
+                    <div class="punto dess"></div>
+                    <div class="punto dess"></div>
+                    <div class="punto"></div>
+                    <div class="punto dess"></div>
+                    <div class="punto"></div>
+                </div>
+            </div>
+            <div class="borde">
+                <div class="cont">
+                    <div class="punto"></div>
+                    <div class="punto dess"></div>
+                    <div class="punto"></div>
+                    <div class="punto dess"></div>
+                    <div class="punto"></div>
+                    <div class="punto dess"></div>
+                    <div class="punto"></div>
+                    <div class="punto dess"></div>
+                    <div class="punto"></div>
+                </div>
+            </div>
+            <div class="borde">
+                <div class="cont">
+                    <div class="punto"></div>
+                    <div class="punto dess"></div>
+                    <div class="punto"></div>
+                    <div class="punto "></div>
+                    <div class="punto dess"></div>
+                    <div class="punto"></div>
+                    <div class="punto"></div>
+                    <div class="punto dess"></div>
+                    <div class="punto"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer><h1>Rafael García Sánchez</h1></footer>
+</body>
+
+</html>

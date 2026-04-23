@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout fixed</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        header{
+            background-color: #002E4C;
+            color: #f1f1f1;
+            text-align: center;
+        }
+        main{
+            position: absolute;
+            top:100px;
+            left: 50px;
+            width: 80%;
+            height: 2000px;
+            border: 1px solid #002E4C;
+        }
+        .caja{
+          background-color: #f1f1f1;
+          width: 200px;
+          height: 150px;
+          margin: 10px;
+          text-align: center;
+          line-height: 75px;
+          font-size: 30px;
+        }
+
+        #caja1{
+            position: absolute;
+            top:100px;
+            left: 500px;
+
+        }
+        #caja2{
+            position: fixed;
+            top:500px;
+            left: 800px;
+
+        }
+        #caja3{
+           position: static;
+           top:400px;
+
+        }
+        #caja4{
+            position: relative;
+            left: 100px;
+            top:100px;
+            
+        }
+        #caja5{
+            position: sticky;
+            left: 600px;
+            top:100px;
+            
+        }
+        
+        #contenedor{
+            border: 5px solid #aaaaaa;
+            background-color: cornflowerblue;
+            margin: auto;
+            width: 90%;
+            
+            clear: both;
+
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fixed layout</h1>
+    </header>
+    
+    <main>
+        <div id="caja1" class="caja">Absolute</div>
+        <div id="caja2" class="caja">Fixed</div>
+        <div id="caja3" class="caja">Static</div>
+        <div id="caja4" class="caja">relative</div> 
+        <div id="caja5" class="caja">Sticky</div> 
+        <div id="caja4" class="caja">4</div>
+        <div id="caja4" class="caja">4</div>
+    
+ <!--    <div id="contenedor">
+        <div id="caja1" class="caja">1</div>
+        <div id="caja1" class="caja">1</div>
+        <div id="caja1" class="caja">1</div>
+        <div id="caja1" class="caja">1</div>
+        <div id="caja1" class="caja">1</div>
+        <div id="caja1" class="caja">1</div>
+        <div id="caja1" class="caja">1</div>
+        
+
+    </div> -->
+    </main>
+    
+</body>
+</html>

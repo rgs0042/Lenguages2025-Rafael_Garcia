@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/css" href="ej02_05.css"?>
+<!DOCTYPE tarjeta
+[
+    <!ELEMENT tarjeta (credito, creditoatr)>
+    <!ELEMENT credito (numero, nombre, venci, chip, logo)>
+    <!ELEMENT numero (#PCDATA) >
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT venci (#PCDATA)>
+    <!ELEMENT chip (#PCDATA)>
+    <!ELEMENT logo (#PCDATA)>
+    <!ELEMENT creditoatr (firma,cvv)>
+    <!ELEMENT firma (#PCDATA)>
+    <!ELEMENT cvv (#PCDATA)>
+    <!ATTLIST numero id ID #REQUIRED>
+    
+]>
+<tarjeta>
+    <credito>
+        <numero id="n1234">1234567891234567</numero>
+        <nombre>Pepe</nombre>
+        <venci>99/99/9999</venci>
+        <chip>La tarjeta de crédito tiene un chip</chip>
+        <logo>Logo</logo>
+
+    </credito>
+    <creditoatr>
+        <firma>Esto debería de ser una firma</firma>
+        <cvv>999</cvv>
+    </creditoatr>
+</tarjeta>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="author" content="Rafael García Sánchez">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        *{
+            box-sizing: border-box !important;
+        }
+        body{
+            
+            background-color: aliceblue;
+        }
+        header{
+            text-align: center;
+        }
+
+        main{
+            margin:auto;
+            width: 90%;
+            background-color: white;
+            box-shadow: 0 0 10px 1px grey;
+            border-radius: 20px;
+        }
+
+        
+
+        footer{
+            text-align: center;
+
+        }
+        ul{
+            text-align: center;
+            list-style: none;
+            padding:0;
+        }
+        li{
+            display: inline-block;
+            margin: 20px;
+            padding: 5px;
+            border-radius: 3px;
+            transition: 0.3s;
+        }
+
+        li:hover{
+            box-shadow: 0 0 5px 1px rgba(128, 128, 128, 0.329);
+            background-color: rgb(183, 184, 185);
+            border-radius: 10px;
+            transform:translateZ(1) ;
+            border: 1px solid rgb(66, 64, 64);
+        }
+
+        li p{
+            color:black;
+            display: inline-block;
+        }
+
+        li i {
+            margin: 10px;
+            color:cornflowerblue;
+            display: inline-block;
+        }
+
+        h1{
+            color: cornflowerblue;
+        }
+
+        p{
+            color:grey
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Menú con iconos</h1>
+        <p>Este menú está creado usando una lista no numerada y la librería de iconos Font Awesome. Cada elemento del menú incluye un icono seguido del texto</p>
+    </header>
+    <main>
+        <ul>   
+            <li><a href=""><i class="fa-solid fa-house"></i><p>Inicio</p></a></li>
+            <li><a href=""></a><i class="fa-solid fa-user"></i><p>Perfil</p></a></li>
+            <li><a href=""></a><i class="fa-solid fa-gear"></i><p>Configuración</p></a></li>
+            <li><a href=""></a><i class="fa-solid fa-circle-info"></i><p>Ayuda</p></a></li>
+            <li><a href=""></a><i class="fa-solid fa-envelope"></i><p>Contacto</p></a></li>
+            <li><a href=""></a><i class="fa-solid fa-arrow-right-to-bracket"></i><p>Login</p></a></li>
+        </ul>
+    </main>
+    <footer>
+        <p>Autor: Rafael García Sánchez</p>
+        <a href="../indextema8.html">Volver al índice</a>
+    </footer>
+</body>
+</html>

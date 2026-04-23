@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/css" href="ej02_02.css"?>
+<agenda xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="ej02_02.xsd">
+    <contacto id ="a01">
+        <nombre>Abderaman tercero</nombre>
+        <numero>1234 antes de cristo</numero>
+        <descripcion>Por si me apetace dominar algun terreno que otro &#40;no se apoya la violencia&#41;</descripcion>
+    </contacto>
+    <contacto id ="b02">
+        <nombre>Mi tia</nombre>
+        <numero>666666666</numero>
+        <descripcion tenerencuenta="si">Tiene un número mu raro</descripcion>
+    </contacto>
+    <contacto id ="c03">
+        <nombre>Ejército</nombre>
+        <numero>957832983</numero>
+        <descripcion tenerencuenta="SI">Por si mi tia se le complica el dia</descripcion>
+    </contacto>
+</agenda>

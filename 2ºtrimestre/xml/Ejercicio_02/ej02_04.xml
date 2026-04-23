@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/css" href="ej02_04.css"?>
+<!DOCTYPE tarjeta
+[
+    <!ELEMENT tarjeta (dni, dniatr)>
+    <!ELEMENT dni (fotografia, contenido)>
+    <!ELEMENT fotografia (#PCDATA) >
+    <!ELEMENT contenido (apellidos,nombre, fechanac, lugarnac, sexo, nacionalidad )>
+    <!ELEMENT apellidos (#PCDATA) >
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT fechanac (#PCDATA)>
+    <!ELEMENT lugarnac (#PCDATA)>
+    <!ELEMENT sexo (#PCDATA)>
+    <!ELEMENT nacionalidad (#PCDATA)>
+    <!ELEMENT dniatr (firma,id, fechaemi,caducidad,domicilio,texto)>
+    <!ELEMENT firma (#PCDATA)>
+    <!ELEMENT id (#PCDATA)>
+    <!ELEMENT fechaemi (#PCDATA)>
+    <!ELEMENT caducidad (#PCDATA)>
+    <!ELEMENT domicilio (#PCDATA)>
+    <!ELEMENT texto (#PCDATA)>
+    <!ATTLIST id id ID #REQUIRED>
+]>
+<tarjeta>
+    <dni>
+        <fotografia>Foto</fotografia>
+        <contenido>
+            <apellidos>Lucas Lucas</apellidos>
+            <nombre>Pepe</nombre>
+            
+            <fechanac>66/66/6666</fechanac>
+            <lugarnac>Allí</lugarnac>
+            <sexo>Macho</sexo>
+            <nacionalidad>Aquí</nacionalidad>
+        </contenido>
+
+    </dni>
+    <dniatr>
+
+        <firma>Firma</firma>
+        <id id="c123">00000000z</id>
+        <fechaemi>99/99/9999</fechaemi>
+        <caducidad>88/88/8888</caducidad>
+        <domicilio>Aquí y Allí</domicilio>
+
+        <texto>JAJAJAJAJAJJAJJAJAJAJAJAJAJJAJAJAJAJAJJAJAJAJAJAJAJAJJAJAJJ</texto>
+
+    </dniatr>
+</tarjeta>

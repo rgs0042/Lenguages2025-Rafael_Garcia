@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header{
+    color: aliceblue;
+    align-content: center;
+    text-align: center;
+    height: 10vh;
+    background-color: cornflowerblue;
+}
+main{
+    
+    background-color:aliceblue;
+    display: flex;
+    
+    flex-direction: column;
+    height: 85vh;
+    width: 100%;
+}
+footer{
+    color: aliceblue;
+    align-content: center;
+    text-align: center;
+    height: 5vh;
+    background-color: cornflowerblue;
+}
+
+.uno{
+    margin: 5px auto;
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    height: 50%;
+    width: 96%;
+}
+
+.calculo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 50px 10px;
+    
+    width: 50%;
+    background-color: rgb(211, 212, 212);
+}
+
+#fact{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border:solid 1px ;
+    padding: 50px 10px;
+    background-color: rgb(200, 245, 245);
+    height: 48%;
+    width: 96%;
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="tarjeta">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="credito">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="numero">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="id" use="required" />
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="nombre" type="xs:string" />
+                            <xs:element name="venci" type="xs:string" />
+                            <xs:element name="chip" type="xs:string" />
+                            <xs:element name="logo" type="xs:string" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="creditoatr">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="firma" type="xs:string" />
+                            <xs:element name="cvv" type="xs:string" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

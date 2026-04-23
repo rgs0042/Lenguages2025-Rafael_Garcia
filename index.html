@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Web de rgs0042</title>
+  <meta name="author" content="Rafael García Sánchez">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+  <header class="hero">
+    <h1>Rafael García Sánchez</h1>
+    <p>Proyectos de desarrollo web</p>
+  </header>
+
+  <div class="layout">
+    <main class="contenido">
+      <section class="galeria">
+        <h2>Primer trimestre</h2>
+        <a href="./1ºtrimestre/examen/index_exam.html" class="card">
+          <h3>Examenes</h3>
+          <span>Primer trimestre</span>
+        </a>
+        <a href="./1ºtrimestre/tema_2/indextema2.html" class="card">
+          <h3>Tema 2</h3>
+          <span>Primer trimestre</span>
+        </a>
+        <a href="./1ºtrimestre/tema_3/indextema3.html" class="card">
+          <h3>Tema 3</h3>
+          <span>Primer trimestre</span>
+        </a>
+        <a href="./1ºtrimestre/tema_4_enlaces/index_rutas.html" class="card">
+          <h3>Tema 4</h3>
+          <span>Primer trimestre</span>
+        </a>
+        <a href="./1ºtrimestre/tema_5_formularios/index_formularios.html" class="card">
+          <h3>Tema 5</h3>
+          <span>Primer trimestre</span>
+        </a>
+        <a href="./1ºtrimestre/tema_06_webSemantica/index_estilosbasicos.html" class="card">
+          <h3>Tema 6</h3>
+          <span>Primer trimestre</span>
+        </a>
+        <a href="./1ºtrimestre/tema_7_hojadestilos/index_hojasdeestilos.html" class="card">
+          <h3>Tema 7</h3>
+          <span>Primer trimestre</span>
+        </a>
+        <a href="./1ºtrimestre/tema_8_cajas/indextema8.html" class="card">
+          <h3>Tema 8</h3>
+          <span>Primer trimestre</span>
+        </a>
+      </section>
+      <section class="trimestre">
+        <h2>Segundo trimestre</h2>
+
+        <ol class="timeline">
+          <li>
+            <span class="dot"></span>
+            <a href="./2ºtrimestre/posicionamiento/indexposi.html">
+              <h3>Posicionamiento</h3>
+              <p>Control del flujo y disposición de elementos</p>
+            </a>
+          </li>
+
+          <li>
+            <span class="dot"></span>
+            <a href="./2ºtrimestre/tablero_ajedrez/indexajedrez.html">
+              <h3>Tablero de ajedrez</h3>
+              <p>Maquetación compleja mediante CSS</p>
+            </a>
+          </li>
+
+          <li>
+            <span class="dot"></span>
+            <a href="./2ºtrimestre/xml/XMLINDEX.html">
+              <h3>Grid & XML</h3>
+              <p>Estructura, datos y diseño responsivo</p>
+            </a>
+          </li>
+          <li>
+            <span class="dot"></span>
+            <a href="./2ºtrimestre/xml/Explicación tema 11 xml_xsd/explicacion.html">
+              <h3>XML_02</h3>
+              <p>Estructura y validació de datos</p>
+            </a>
+          </li>
+          <li>
+            <span class="dot"></span>
+            <a href="./2ºtrimestre/TEMA_12/index.html">
+              <h3>XML_03</h3>
+              <p>Estructura y validación XBase</p>
+            </a>
+          </li>
+        </ol>
+      </section>
+      <section class="tercer-trimestre">
+        <h2>Tercer trimestre</h2>
+
+        <article class="nota">
+          <p class="fecha">Entrada I</p>
+          <p>
+            Este trimestre se encuentra actualmente en desarrollo.
+            El trabajo se centra en la consolidación de los conocimientos
+            adquiridos y en la exploración de nuevas técnicas.
+          </p>
+        </article>
+
+        <article class="nota">
+          <p class="fecha">Observaciones</p>
+          <p>
+            Se están definiendo los objetivos finales del proyecto,
+            así como la estructura general y las herramientas a utilizar.
+          </p>
+        </article>
+
+        <article class="nota pendiente">
+          <p class="fecha">Próximamente</p>
+          <p>
+            Desarrollo del proyecto final.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <aside class="sidebar">
+      <h4>Galería</h4>
+
+      <div class="carousel">
+        <img src="img/formulario01.png" class="active">
+        <img src="img/posicionamiento01.png">
+        <img src="img/posicionamiento02.png">
+        <img src="img/posicionamiento03.png">
+        <img src="img/posicionamiento04.png">
+        <img src="img/posicionamiento05.png">
+        <img src="img/posicionamiento06.png">
+        <img src="img/texto01.png">
+      </div>
+    </aside>
+  </div>
+  <button id="scrollBtn" class="scroll-btn">
+    Seguir leyendo
+  </button>
+
+</body>
+<script>
+  // Carrousel
+  const images = document.querySelectorAll('.carousel img');
+  let current = 0;
+
+  setInterval(() => {
+    images[current].classList.remove('active');
+    current = (current + 1) % images.length;
+    images[current].classList.add('active');
+  }, 4000);
+
+
+  // Boton de transición
+  const btn = document.getElementById('scrollBtn');
+
+  btn.addEventListener('click', () => {
+    if (window.scrollY < 200) {
+      window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: 'smooth'
+      });
+    } else {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  });
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 200) {
+      btn.textContent = 'Volver al inicio';
+    } else {
+      btn.textContent = 'Seguir leyendo';
+    }
+  });
+</script>
+
+</html>

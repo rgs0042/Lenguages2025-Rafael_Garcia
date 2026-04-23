@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header><h1>Ejercicios JavaScript</h1></header>
+    <main>
+        <div class="uno">
+            <div class="calculo">
+                <h2>Sección de Cálculo</h2>
+                <label for="ancho">Ancho(cm):</label>
+                <input type="text" id="ancho">
+                <label for="alto">Alto(cm):</label>
+                <input type="text" id="alto">
+                <label for="largo">Largo(cm):</label>
+                <input type="text" id="largo">
+                <label for="material">Material:</label>
+                <select id="material" >
+                    <option value="Plástico">Plástico</option>
+                    <option value="Cartón">Cartón</option>
+                    <option value="Madera">Madera</option>
+                </select>
+                <button id="btnCalcular" class="btn-calcular" onclick="btnCalcular()">Calcular</button>
+            </div>
+            <div class="calculo">
+                <h2>Sección de Cálculo</h2>
+                <label for="preciob">Precio base por m<sup>2</sup>:</label>
+                <input type="text" id="preciob">
+                <label for="plas">Incremento (%) para Plástico:</label>
+                <input type="text" id="plas">
+                <label for="car">Incremento (%) para Cartón:</label>
+                <input type="text" id="car">
+                <label for="made">Incremento (%) para Madera:</label>
+                <input type="text" id="made">
+                <label for="iva">IVA (%):</label>
+                <input type="text" id="iva">
+            </div>
+        </div>
+        <div id="fact">
+            
+            <p id="texto"></p>
+            
+
+        </div>
+    </main>
+    <footer><h2>Rafael García Sánchez</h2></footer>
+    <script src="./source.js"></script>
+</body>
+</html>

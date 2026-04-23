@@ -1,0 +1,269 @@
+.bandera {
+  width: 200px;
+  height: 120px;
+  position: relative;
+  overflow: hidden;
+}
+
+.alemania { background: linear-gradient(to bottom, black 33%, red 33% 66%, gold 66%); }
+
+.espana { background: linear-gradient(to bottom, red 25%, yellow 25% 75%, red 75%); }
+
+.rusia { background: linear-gradient(to bottom, white 33%, blue 33% 66%, red 66%); }
+
+.holanda { background: linear-gradient(to bottom, red 33%, white 33% 66%, blue 66%); }
+
+.austria { background: linear-gradient(to bottom, red 33%, white 33% 66%, red 66%); }
+
+.bulgaria { background: linear-gradient(to bottom, white 33%, green 33% 66%, red 66%); }
+
+.hungria { background: linear-gradient(to bottom, red 33%, white 33% 66%, green 66%); }
+.francia { background: linear-gradient(to right, blue 33%, white 33% 66%, red 66%); }
+
+.italia { background: linear-gradient(to right, green 33%, white 33% 66%, red 66%); }
+
+.belgica { background: linear-gradient(to right, black 33%, yellow 33% 66%, red 66%); }
+
+.irlanda { background: linear-gradient(to right, green 33%, white 33% 66%, orange 66%); }
+
+.rumania { background: linear-gradient(to right, blue 33%, yellow 33% 66%, red 66%); }
+
+.peru { background: linear-gradient(to right, red 33%, white 33% 66%, red 66%); }
+
+.grecia {
+  background: repeating-linear-gradient(to bottom, blue 10%, white 10% 20%);
+}
+
+.suiza {
+  background: red;
+}
+
+.suiza::before,
+.suiza::after {
+  content: "";
+  position: absolute;
+  background: white;
+}
+
+.suiza::before {
+  width: 60px;
+  height: 20px;
+  top: 50px;
+  left: 70px;
+}
+
+.suiza::after {
+  width: 20px;
+  height: 60px;
+  top: 30px;
+  left: 90px;
+}
+
+.japon { background: white; }
+
+.japon::after {
+  content: "";
+  width: 60px;
+  height: 60px;
+  background: red;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bangladesh { background: green; }
+
+.bangladesh::after {
+  content: "";
+  width: 60px;
+  height: 60px;
+  background: red;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+}
+
+.palau { background: skyblue; }
+
+.palau::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background: yellow;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.checa {
+  background: linear-gradient(to bottom, white 50%, red 50%);
+}
+
+.checa::before {
+  content: "";
+  position: absolute;
+  border-left: 80px solid blue;
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+}
+
+.bahamas {
+  background: linear-gradient(to bottom, aqua 33%, yellow 33% 66%, aqua 66%);
+}
+
+.bahamas::before {
+  content: "";
+  position: absolute;
+  border-left: 80px solid black;
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+}
+
+.turquia { background: red; }
+
+.turquia::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 50%;
+  top: 35px;
+  left: 60px;
+}
+
+.turquia::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: red;
+  border-radius: 50%;
+  top: 40px;
+  left: 70px;
+}
+
+.pakistan { background: green; }
+
+.pakistan::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 50%;
+  top: 35px;
+  left: 80px;
+}
+
+.pakistan::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: green;
+  border-radius: 50%;
+  top: 40px;
+  left: 90px;
+}
+
+.estrella {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 30px solid yellow;
+}
+
+.estrella::after {
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: 10px;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 30px solid yellow;
+}
+
+.vietnam { background: red; }
+
+.vietnam .estrella {
+  top: 40px;
+  left: 85px;
+}
+
+.china { background: red; }
+
+.china .estrella {
+  top: 20px;
+  left: 30px;
+}
+
+/* Brasil */
+.brasil { background: green; }
+
+.brasil::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: yellow;
+  top: 10px;
+  left: 50px;
+  transform: rotate(45deg);
+}
+
+.brasil::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: blue;
+  border-radius: 50%;
+  top: 30px;
+  left: 70px;
+}
+
+/* USA */
+.usa {
+  background: repeating-linear-gradient(to bottom, red 10px, white 10px 20px);
+}
+
+.usa::before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 60px;
+  background: navy;
+}
+
+/* Suecia */
+.suecia {
+  background: blue;
+}
+
+.suecia::before,
+.suecia::after {
+  content: "";
+  position: absolute;
+  background: yellow;
+}
+
+.suecia::before {
+  width: 100%;
+  height: 20px;
+  top: 50px;
+}
+
+.suecia::after {
+  width: 20px;
+  height: 100%;
+  left: 60px;
+}

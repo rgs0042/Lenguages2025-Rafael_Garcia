@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/css" href="ej02_05.css"?>
+<!DOCTYPE factura
+[
+    <!ELEMENT factura (emisor, cliente, detalle)>
+    <!ATTLIST factura numero CDATA #REQUIRED>
+    <!ATTLIST factura fecha  CDATA #REQUIRED>     
+            
+    <!ELEMENT emisor (nombre, cif, telefono)>
+    <!ELEMENT cliente (nombre, cif, telefono)>
+
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT cif (#PCDATA)>
+    <!ELEMENT telefono (#PCDATA)>
+
+    <!-- Detallesssssssssssssssssssssssssss///////////////////////////////// -->
+
+    <!ELEMENT detalle (linea+, total)>
+    <!ATTLIST detalle importe CDATA #REQUIRED>
+            
+
+    <!ELEMENT linea (descripcion, cantidad, oferta?, pvp)>
+    <!ATTLIST linea codigo ID #REQUIRED>
+    <!ATTLIST linea tipo (Libro | DVD | Varios) #IMPLIED>
+
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT cantidad (#PCDATA)>
+    <!ELEMENT pvp (#PCDATA)>
+
+    <!ELEMENT oferta EMPTY>
+    <!ELEMENT total (#PCDATA)>
+]>
+
+
+<factura numero="c123" fecha="11/11/2000">
+    <emisor>
+        <nombre></nombre>
+        <cif></cif>
+        <telefono></telefono>
+    </emisor>
+    <cliente>
+        <nombre></nombre>
+        <cif></cif>
+        <telefono></telefono>
+    </cliente>
+    <detalle importe="157€">
+        <linea codigo="c123" tipo="Libro">
+            <descripcion></descripcion>
+            <cantidad></cantidad>
+            <oferta></oferta>
+            <pvp></pvp>
+        </linea>
+        <total></total>
+    </detalle>
+</factura>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- Etiqueta para ingresar el primer número -->
+    <label>Primer número: <input type="number" id="numero1"></label><br>
+    <!-- Etiqueta para ingresar el segundo número -->
+    <label>Segundo número: <input type="number" id="numero2"></label><br>
+    <!-- Botón que ejecuta la función calcular() al hacer clic -->
+    <button onclick="calcular()">Calcular</button><br>
+    <!-- Divs donde se muestran los diferenetes resultados -->
+    <div>La suma es: <span id="suma"></span></div>
+    <div>El producto es: <span id="producto"></span></div>
+    <div>El número mayor es: <span id="mayor"></span></div>
+
+    <script>
+        // Crea la función
+        function calcular() {
+            // Variables donde se guardan los números pedidos
+            const numero1 = Number(document.getElementById("numero1").value);
+            const numero2 = Number(document.getElementById("numero2").value);
+            // Calcular la suma y el producto de los dos números
+            const suma = numero1 + numero2;
+            const producto = numero1 * numero2;
+            let mayor;
+            // Determina cuál de los dos númeors es mayor
+            if (numero1 > numero2) {
+                mayor = numero1;
+            } else if (numero2 > numero1) {
+                mayor = numero2;
+            } else {
+                mayor = "Los números son iguales";
+            }
+            // Muestra los resultados en los ids que le decimos
+            document.getElementById("suma").textContent = suma;
+            document.getElementById("producto").textContent = producto;
+            document.getElementById("mayor").textContent = mayor;
+        }
+    </script>
+</body>
+
+</html>

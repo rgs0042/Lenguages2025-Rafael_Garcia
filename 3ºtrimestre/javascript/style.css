@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header{
+    color: aliceblue;
+    align-content: center;
+    text-align: center;
+    height: 10vh;
+    background-color: cornflowerblue;
+}
+main{
+    background-color:aliceblue;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+}
+footer{
+    color: aliceblue;
+    align-content: center;
+    text-align: center;
+    height: 5vh;
+    background-color: cornflowerblue;
+}
+
+
+.caja{
+    text-decoration: none;
+    color: cornflowerblue;
+    padding: 20px;
+    text-align: center;
+    width: 40%;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 5px 1px rgba(128, 128, 128, 0.705);
+    transition: 0.2s;
+}
+
+.caja:hover{
+box-shadow: -1px -1px 5px 1px rgba(128, 128, 128, 0.795);
+transform: scale(102%);
+}

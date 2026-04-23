@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/css" href="ej02_03.css"?>
+<menu xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="ej02_03.xsd">
+    <item id ="a12">
+        <nombre>Caracoles</nombre>
+        <descripcion>Salaitos y dulces</descripcion>
+    </item>
+    <item id ="b12">
+        <nombre>Barro</nombre>
+        <descripcion>Recien recogido del suelo</descripcion>
+    </item>
+    <item id ="c12" tipo="desayuno">
+        <nombre>Chuches</nombre>
+        <descripcion>Todo azúcar no muy saludable</descripcion>
+    </item>
+    <item id ="d12" tipo="postre">
+        <nombre>Televisores</nombre>
+        <descripcion>Bueno algo innovador tenia que haber</descripcion>
+    </item>
+    <item id ="e12">
+        <nombre>Mesa</nombre>
+        <descripcion>Si, tienes la posibilidad de comerte la mesa</descripcion>
+    </item>
+</menu>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rafael García Sánchez">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        header {
+            color: aliceblue;
+            align-content: center;
+            text-align: center;
+            height: 10vh;
+            background-color: cornflowerblue;
+        }
+
+        main {
+
+            background-color: aliceblue;
+            display: flex;
+
+            flex-direction: column;
+            height: 85vh;
+            width: 100%;
+        }
+
+        footer {
+            color: aliceblue;
+            align-content: center;
+            text-align: center;
+            height: 5vh;
+            background-color: cornflowerblue;
+        }
+
+        .uno {
+            margin: 5px auto;
+            display: flex;
+            justify-content: center;
+            gap: 3px;
+            height: 50%;
+            width: 96%;
+        }
+
+        .calculo {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 50px 10px;
+
+            width: 50%;
+            background-color: rgb(211, 212, 212);
+        }
+
+        #fact {
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            border: solid 1px;
+            padding: 50px 10px;
+            background-color: rgb(200, 245, 245);
+            height: 48%;
+            width: 96%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Ejercicios JavaScript</h1>
+    </header>
+    <main>
+        <div class="uno">
+            <div class="calculo">
+                <h2>Sección de Cálculo</h2>
+                <label for="numa">Número 1</label>
+                <input type="text" id="numa">
+                <label for="numb">Número 2</label>
+                <input type="text" id="numb">
+                <label for="numc">Número 3</label>
+                <input type="text" id="numc">
+                <button id="btnCalcular" class="btn-calcular" onclick="btnCalcular()">Calcular</button>
+            </div>
+
+        </div>
+        <div id="fact">
+
+            <p id="texto"></p>
+
+
+        </div>
+    </main>
+    <footer>
+        <h2>Rafael García Sánchez</h2>
+    </footer>
+    <script>
+        function btnCalcular() {
+
+            const numa = parseFloat(document.getElementById("numa").value);
+            const numb = parseFloat(document.getElementById("numb").value);
+            const numc = parseFloat(document.getElementById("numc").value);
+
+            let mayor;
+
+            let menor;
+
+            let numero = [numa, numb, numc];
+
+            if (numa > numb && numa > numc) {
+                    mayor = numa;
+
+                } else if (numb > numa && numb > numc) {
+                    mayor = numb;
+
+                } else if (numc > numa && numc > numb) {
+                    mayor = numc;
+                }
+
+                else {
+                    mayor = "Los números son iguales";
+                };
+
+            if (numa < numb && numa < numc) {
+                    menor = numa;
+
+                } else if (numb < numa && numb < numc) {
+                    menor = numb;
+
+                } else if (numc < numa && numc < numb) {
+                    menor = numc;
+                }
+
+                else {
+                    menor = "Los números son iguales";
+                };
+
+
+
+
+            let element = menor;
+            let numeror = [0, 0 , 0] ;
+            // numero[0] = menor
+
+            let max =menor;
+            numeror[0] = menor;
+            
+            for (let i = 1; i <= numero.length; i++) {
+
+                if(numero[i]>max){
+                    max = numeror[i];
+                    numeror[i] = numero[i];
+                    
+                    
+                }
+                
+                else{
+                    element= "Los numeros son iguales"
+                }
+                ;
+            }
+
+
+            // for (let i = 0; i <= numero.length; i++) {
+
+            //     if(numero[i]<numeror[i]){
+            //         numeror[i] = numero[i]
+            //     }
+                
+            //     else{
+            //         element= "Los numeros son iguales"
+            //     }
+            //     ;
+
+
+                // if (numa > element) {
+                //     mayor = numa;
+                //     element = mayor;
+                //     numeror[i] = element;
+                // } else if (numb > element) {
+                //     mayor = numb;
+                //     element = mayor;
+                //     numeror[i] = element;
+                // } else if(numc > element) {
+                //     mayor = numc;
+                //     element = mayor;
+                //     numeror[i] = element;
+                //     console.log("hola")
+                // }
+                
+
+                
+
+                
+                
+            // }
+
+
+
+            document.getElementById("texto").innerHTML = `
+        <h2>Sección de Resultados</h2>
+
+        <p>El mayor es:  ${mayor}</p>
+        <p>El menor es:  ${menor}</p>
+        <p>El orden es: ${numeror}</p>
+        
+        
+        
+
+
+
+            `;
+
+        }
+    </script>
+
+</body>
+
+</html>
